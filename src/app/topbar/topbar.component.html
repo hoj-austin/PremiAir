@@ -1,8 +1,32 @@
 <mat-toolbar color="primary">
+<div fxHide.gt-xs>
+  <button mat-icon-button (click)="onToggleSidenav()">
+      <mat-icon>menu</mat-icon>
+  </button>
+</div>
+<div>
+  <a routerLink="/home">PremiAir</a>
+</div>
+<span class="remaining-space"></span>
+<div fxFlex fxLayout fxLayoutAlign="end" fxHide.xs>
+  <ul fxLayout fxLayoutGap="15px" class="navigation-items">
+      <li>
+          <a routerLink="/scenics">Scenics</a>
+      </li>
+      <li>
+          <a routerLink="/tours">Tours</a>
+      </li>
+  </ul>
+</div>
+</mat-toolbar>
+
+
+<!-- <mat-toolbar color="primary">
   <span>Application Title</span>
-  <!-- This fills the remaining space of the current row -->
-  <span class="example-fill-remaining-space"></span>
+  This fills the remaining space of the current row *comment out
+  <span class="remaining-space"></span>
   <span>
+
   <button mat-raised-button color="primary">
     Primary
   </button>
@@ -13,31 +37,5 @@
     Warning
   </button>
 </span>
-  <!-- <span>Right Aligned Text</span> -->
-</mat-toolbar>
-
-<mat-card>
-    Main Theme:
-    <button mat-raised-button color="primary">
-      Primary
-    </button>
-    <button mat-raised-button color="accent">
-      Accent
-    </button>
-    <button mat-raised-button color="warn">
-      Warning
-    </button>
-  </mat-card>
-  
-  <mat-card class="alternate-theme">
-    Alternate Theme:
-    <button mat-raised-button color="primary">
-      Primary
-    </button>
-    <button mat-raised-button color="accent">
-      Accent
-    </button>
-    <button mat-raised-button color="warn">
-      Warning
-    </button>
-  </mat-card>
+  <span>Right Aligned Text</span>
+</mat-toolbar> -->
