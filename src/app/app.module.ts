@@ -11,6 +11,8 @@ import { MatButtonModule } from '@angular/material/button'
 import { MatIconModule } from '@angular/material/icon'
 import { MatCardModule } from '@angular/material/card';
 import { ToursComponent } from './tours/tours.component'
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { RoutingModule } from './routing/routing.module'
 
 @NgModule({
   declarations: [
@@ -26,7 +28,9 @@ import { ToursComponent } from './tours/tours.component'
     BrowserAnimationsModule,
     MatButtonModule,
     MatIconModule,
-    MatCardModule
+    MatCardModule,
+    MatToolbarModule,
+    RoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
