@@ -1,25 +1,33 @@
-<mat-card>
-    Main Theme:
-    <button mat-raised-button color="primary">
-      Primary
-    </button>
-    <button mat-raised-button color="accent">
-      Accent
-    </button>
-    <button mat-raised-button color="warn">
-      Warning
-    </button>
-  </mat-card>
-  
-  <mat-card class="alternate-theme">
-    Alternate Theme:
-    <button mat-raised-button color="primary">
-      Primary
-    </button>
-    <button mat-raised-button color="accent">
-      Accent
-    </button>
-    <button mat-raised-button color="warn">
-      Warning
-    </button>
-  </mat-card>
+<mat-toolbar>
+<mat-toolbar-row>
+  <div fxHide.gt-xs>
+  <button mat-icon-button (click)="onToggleSidenav()">
+      <mat-icon color = "primary">menu</mat-icon>
+  </button>
+</div>
+<div>
+  <a routerLink="/home">
+    <img src="../../assets/logo.PNG" width="120" height="44"> 
+  </a>
+</div>
+<span class="remaining-space"></span>
+<div fxFlex fxLayout fxLayoutAlign="end" fxHide.xs>
+  <ul fxLayout fxLayoutGap="15px" class="navigation-items">
+      <li>
+        <a routerLink="/scenics">Scenics
+          <!-- <mat-icon color="primary">camera_alt</mat-icon>  -->
+        </a>
+      </li>
+      <li >
+          <a routerLink="/tours">Tours</a>
+      </li>
+      <li color="primary">
+        <a routerLink="/about">About Us</a>
+      </li>
+      <li color="primary">
+        <a routerLink="/love">Love</a>
+      </li>
+  </ul>
+</div>
+</mat-toolbar-row>
+</mat-toolbar>

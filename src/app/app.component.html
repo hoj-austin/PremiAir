@@ -1,3 +1,16 @@
-<app-topbar></app-topbar>
-<app-scenics></app-scenics>
-<app-footer></app-footer>
+<mat-sidenav-container>
+    <mat-sidenav #sidenav role="navigation">
+        <app-sidenav-list (sidenavClose)="sidenav.close()"></app-sidenav-list>
+        <!-- <app-sidenav-list (sidenavToggle)="sidenav.toggle()"></app-sidenav-list> -->
+    </mat-sidenav>
+    <mat-sidenav-content>
+      <!--in here all the content must reside. We will add a navigation header as well-->
+      <main>
+        <app-topbar (sidenavToggle)="sidenav.toggle()"></app-topbar>
+        <!-- <router-outlet name="homeoutlet"></router-outlet> -->
+        <router-outlet></router-outlet>
+        <!-- <app-scenics></app-scenics> -->
+      </main>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+

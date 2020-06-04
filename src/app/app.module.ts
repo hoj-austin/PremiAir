@@ -11,6 +11,12 @@ import { MatButtonModule } from '@angular/material/button'
 import { MatIconModule } from '@angular/material/icon'
 import { MatCardModule } from '@angular/material/card';
 import { ToursComponent } from './tours/tours.component'
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { RoutingModule } from './routing/routing.module'
+import { MatSidenavModule } from '@angular/material/sidenav'
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { MatListModule } from '@angular/material/list';
+import { SidenavListComponent } from './navigation/sidenav-list/sidenav-list.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +24,8 @@ import { ToursComponent } from './tours/tours.component'
     TopbarComponent,
     ScenicsComponent,
     FooterComponent,
-    ToursComponent
+    ToursComponent,
+    SidenavListComponent
   ],
   imports: [
     BrowserModule,
@@ -26,7 +33,12 @@ import { ToursComponent } from './tours/tours.component'
     BrowserAnimationsModule,
     MatButtonModule,
     MatIconModule,
-    MatCardModule
+    MatCardModule,
+    MatToolbarModule,
+    RoutingModule,
+    MatSidenavModule,
+    FlexLayoutModule,
+    MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent]
