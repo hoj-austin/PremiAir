@@ -12,8 +12,8 @@
 // Define the palettes for your theme using the Material Design palettes available in palette.scss
 // (imported above). For each palette, you can optionally specify a default, lighter, and darker
 // hue. Available color palettes: https://material.io/design/color/
-$PremiAir-primary: mat-palette($mat-blue-grey);
-$PremiAir-accent: mat-palette($mat-pink, 500, 900, A100);
+$PremiAir-primary: mat-palette($mat-cyan, 700, 300, 900);
+$PremiAir-accent: mat-palette($mat-blue-gray, 300, 700);
 
 // The warn palette is optional (defaults to red).
 $PremiAir-warn: mat-palette($mat-red);
@@ -33,6 +33,7 @@ $PremiAir-theme: mat-light-theme($PremiAir-primary, $PremiAir-accent, $PremiAir-
     $alternate-theme: mat-light-theme($alternate-primary, $alternate-accent);
     @include angular-material-theme($alternate-theme);
 }
+
 
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

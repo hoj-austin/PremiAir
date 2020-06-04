@@ -7,8 +7,8 @@ import { ScenicsComponent } from '../scenics/scenics.component'
 import { ToursComponent } from '../tours/tours.component'
  
 const routes: Routes = [
-  { path: 'home', component: TopbarComponent},
-  { path: '', redirectTo: '/home', pathMatch: 'full' },
+  // { path: 'home', component: AppComponent, outlet: "homeoutlet" },
+  // { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: 'scenics', component: ScenicsComponent},
   { path: 'tours', component: ToursComponent},
  
