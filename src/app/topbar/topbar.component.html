@@ -4,7 +4,7 @@
 <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous"> -->
 <mat-toolbar>
 <mat-toolbar-row>
-  <div fxHide.gt-xs>
+  <div fxHide.gt-sm>
   <button mat-icon-button (click)="onToggleSidenav()">
       <mat-icon color = "primary">menu</mat-icon>
   </button>
@@ -15,8 +15,8 @@
   </a>
 </div>
 <span class="remaining-space"></span>
-<div fxFlex fxLayout fxLayoutAlign="end" fxHide.xs>
-  <ul fxLayout fxLayoutGap="30px" class="navigation-items">
+<div fxFlex fxLayout fxLayoutAlign="end" fxHide.sm>
+  <ul fxLayout fxLayoutGap="20px" class="navigation-items">
       <li>
         <a routerLink="/scenics">Scenics
         </a>
@@ -31,12 +31,12 @@
         <a routerLink="/about">About Us</a>
       </li>
       <li>
-        <a routerLink="/facebook"> 
+        <a href="https://www.facebook.com/PremiAir-Helicopters-584898148653253/"> 
           <i class="fab fa-facebook" aria-hidden="true"></i>
         </a>
       </li>
       <li >
-        <a routerLink="/instagram"> 
+        <a href="https://www.instagram.com/premiairhelicopters/"> 
           <i class="fab fa-instagram" aria-hidden="true"></i>
         </a>
       </li>
