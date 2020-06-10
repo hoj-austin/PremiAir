@@ -1,17 +1,19 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Routes, RouterModule } from '@angular/router';
-import { AppComponent } from '../app.component'
-import { TopbarComponent } from '../topbar/topbar.component';
+import { HomeComponent } from '../home/home.component';
 import { ScenicsComponent } from '../scenics/scenics.component'
 import { ToursComponent } from '../tours/tours.component'
+import { AerialWorkComponent } from '../aerial-work/aerial-work.component'
+import { AboutUsComponent } from '../about-us/about-us.component'
  
 const routes: Routes = [
-  // { path: 'home', component: AppComponent, outlet: "homeoutlet" },
-  // { path: '', redirectTo: '/home', pathMatch: 'full' },
+  { path: 'home', component: HomeComponent},
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: 'scenics', component: ScenicsComponent},
   { path: 'tours', component: ToursComponent},
- 
+  { path: 'aerial', component: AerialWorkComponent},
+  { path: 'about', component: AboutUsComponent},
 ];
 
 @NgModule({

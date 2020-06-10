@@ -1,31 +1,51 @@
+<link rel="stylesheet" href=
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
+<!-- </link> -->
+<!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous"> -->
 <mat-toolbar>
 <mat-toolbar-row>
-  <div fxHide.gt-xs>
-  <button mat-icon-button (click)="onToggleSidenav()">
+  <div fxHide.gt-sm class="menu-button">
+  <button mat-icon-button (click)="onToggleSidenav()" >
       <mat-icon color = "primary">menu</mat-icon>
   </button>
 </div>
 <div>
   <a routerLink="/home">
-    <img src="../../assets/logo.PNG" width="120" height="44"> 
+    <img class="text" src="../../assets/logo_text.png" width="245" height="50">  
+    <img class="icon" src="../../assets/logo_icon.png" width="105" height="60">
+    <!-- <img src="../../assets/logo_text.png" width="196" height="40">   -->
   </a>
 </div>
 <span class="remaining-space"></span>
-<div fxFlex fxLayout fxLayoutAlign="end" fxHide.xs>
-  <ul fxLayout fxLayoutGap="15px" class="navigation-items">
+<div fxFlex fxLayout fxLayoutAlign="end" fxHide.sm fxHide.xs>
+  <ul fxLayout fxLayoutGap="20px" class="navigation-items">
       <li>
         <a routerLink="/scenics">Scenics
-          <!-- <mat-icon color="primary">camera_alt</mat-icon>  -->
         </a>
       </li>
       <li >
           <a routerLink="/tours">Tours</a>
       </li>
-      <li color="primary">
+      <li >
+        <a routerLink="/aerial">Photography</a>
+      </li>
+      <li>
         <a routerLink="/about">About Us</a>
       </li>
-      <li color="primary">
-        <a routerLink="/love">Love</a>
+      <li>
+        <a href="https://www.facebook.com/PremiAir-Helicopters-584898148653253/"> 
+          <i class="fab fa-facebook" aria-hidden="true"></i>
+        </a>
+      </li>
+      <li >
+        <a href="https://www.instagram.com/premiairhelicopters/"> 
+          <i class="fab fa-instagram" aria-hidden="true"></i>
+        </a>
+      </li>
+      <li >
+        <a routerLink="/linkedin"> 
+          <i class="fab fa-linkedin" aria-hidden="true"></i>
+        </a>
       </li>
   </ul>
 </div>
