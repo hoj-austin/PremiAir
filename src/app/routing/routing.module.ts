@@ -8,13 +8,12 @@ import { AerialWorkComponent } from '../aerial-work/aerial-work.component'
 import { AboutUsComponent } from '../about-us/about-us.component'
  
 const routes: Routes = [
-  { path: 'home', component: HomeComponent, outlet: "homeoutlet" },
+  { path: 'home', component: HomeComponent},
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: 'scenics', component: ScenicsComponent},
   { path: 'tours', component: ToursComponent},
   { path: 'aerial', component: AerialWorkComponent},
   { path: 'about', component: AboutUsComponent},
- 
 ];
 
 @NgModule({
