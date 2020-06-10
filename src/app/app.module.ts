@@ -17,6 +17,9 @@ import { MatSidenavModule } from '@angular/material/sidenav'
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatListModule } from '@angular/material/list';
 import { SidenavListComponent } from './navigation/sidenav-list/sidenav-list.component';
+import { AerialWorkComponent } from './aerial-work/aerial-work.component';
+import { AboutUsComponent } from './about-us/about-us.component';
+import { HomeComponent } from './home/home.component';
 // import { AngularFontAwesomeModule } from 'angular-font-awesome';
 
 @NgModule({
@@ -26,7 +29,10 @@ import { SidenavListComponent } from './navigation/sidenav-list/sidenav-list.com
     ScenicsComponent,
     FooterComponent,
     ToursComponent,
-    SidenavListComponent
+    SidenavListComponent,
+    AerialWorkComponent,
+    AboutUsComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
