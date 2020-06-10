@@ -7,9 +7,8 @@
       <!--in here all the content must reside. We will add a navigation header as well-->
       <main>
         <app-topbar (sidenavToggle)="sidenav.toggle()"></app-topbar>
-        <!-- <router-outlet name="homeoutlet"></router-outlet> -->
         <router-outlet></router-outlet>
-        <!-- <app-scenics></app-scenics> -->
+        <app-footer></app-footer>
       </main>
     </mat-sidenav-content>
   </mat-sidenav-container>

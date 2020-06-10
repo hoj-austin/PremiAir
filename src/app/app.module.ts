@@ -17,6 +17,7 @@ import { MatSidenavModule } from '@angular/material/sidenav'
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatListModule } from '@angular/material/list';
 import { SidenavListComponent } from './navigation/sidenav-list/sidenav-list.component';
+// import { AngularFontAwesomeModule } from 'angular-font-awesome';
 
 @NgModule({
   declarations: [
