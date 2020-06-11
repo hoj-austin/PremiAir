@@ -5,7 +5,9 @@
     <mat-sidenav-content>
       <main>
         <app-topbar (sidenavToggle)="sidenav.toggle()"></app-topbar>
-        <router-outlet></router-outlet>
+        <section class="container">
+          <router-outlet></router-outlet>
+        </section>
         <app-footer></app-footer>
       </main>
     </mat-sidenav-content>
