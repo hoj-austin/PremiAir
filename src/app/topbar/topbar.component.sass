@@ -12,14 +12,23 @@ a:hover, a:active
     color: #fe5000
     font-size: 101%
 
-
 @media screen and (min-width: 1201px)
     a
         font-size: 18px
+    i
+        font-size: 24px
+    
 
-@media screen and (max-width: 1200px)
+@media screen and (max-width: 1200px) and (min-width: 959px)
     a
         font-size: 16px
+    i
+        font-size: 22px
+
+@media screen and (max-width: 958px) 
+    i
+        font-size: 28px
+
 
 .navigation-items
     list-style-type: none
@@ -27,7 +36,13 @@ a:hover, a:active
     margin: 0
 
 mat-icon
-    font-size: 30px 
+    font-size: 30px
+    padding-right: 5px 
+    color: #00205B
+    outline: none
+    
+mat-icon:hover
+    color: #fe5000
 
 mat-toolbar
     background-color: #ffffff
@@ -44,7 +59,6 @@ mat-toolbar
     padding-right: 10px
 
 
-
 .logo
     padding-top: 80px
     padding-bottom: 30px
@@ -54,23 +68,18 @@ mat-toolbar
 
 .logo-small
     padding-top: 70px
-    padding-bottom: 25px
+    padding-bottom: 20px
     max-width: 220px
     width: 100%
     height: auto
     padding-inline-end: 0px
 
 .menu-button
-    padding-top: 40px
-    padding-inline-end: 10px
+    padding-top: 35px
 
-mat-icon
-    color: #00205B
-    outline: none
 
-    
-mat-icon:hover
-    color: #fe5000
+
+
 
 
 
