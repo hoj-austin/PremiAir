@@ -1,30 +1,30 @@
 <link rel="stylesheet" href=
 "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
-<!-- </link> -->
-<!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous"> -->
 <mat-toolbar>
 <mat-toolbar-row>
   <div fxHide.gt-sm class="menu-button">
   <button mat-icon-button (click)="onToggleSidenav()" >
-      <mat-icon color = "primary">menu</mat-icon>
+      <mat-icon>menu</mat-icon>
   </button>
 </div>
-<div>
+<div fxHide.sm fxHide.xs>
   <a routerLink="/home">
-    <img class="text" src="../../assets/logo_text.png" width="245" height="50">  
-    <img class="icon" src="../../assets/logo_icon.png" width="105" height="60">
-    <!-- <img src="../../assets/logo_text.png" width="196" height="40">   -->
+    <img class="logo" src="../../assets/PremiAir_Horiz_png_leftcrop.png">  
+  </a>
+</div>
+<div fxHide.gt-sm>
+  <a routerLink="/home">
+    <img class="logo-small" src="../../assets/PremiAir_Stacked_png.png">  
   </a>
 </div>
 <span class="remaining-space"></span>
-<div fxFlex fxLayout fxLayoutAlign="end" fxHide.sm fxHide.xs>
-  <ul fxLayout fxLayoutGap="20px" class="navigation-items">
+<div fxFlex fxLayout fxLayoutAlign="end center" fxHide.sm fxHide.xs>
+  <ul fxLayout fxLayoutGap="25px" class="navigation-items">
       <li>
-        <a routerLink="/scenics">Scenics
-        </a>
+        <a routerLink="/scenics">Scenic Flights</a>
       </li>
       <li >
-          <a routerLink="/tours">Tours</a>
+          <a routerLink="/tours">Experiences</a>
       </li>
       <li >
         <a routerLink="/aerial">Photography</a>
@@ -37,14 +37,33 @@
           <i class="fab fa-facebook" aria-hidden="true"></i>
         </a>
       </li>
-      <li >
+      <li>
         <a href="https://www.instagram.com/premiairhelicopters/"> 
           <i class="fab fa-instagram" aria-hidden="true"></i>
         </a>
       </li>
-      <li >
+      <li>
         <a routerLink="/linkedin"> 
           <i class="fab fa-linkedin" aria-hidden="true"></i>
+        </a>
+      </li>
+  </ul>
+</div>
+<div fxFlex fxLayout fxLayoutAlign="end" fxHide.gt-sm>
+  <ul fxLayout fxLayoutGap="15px" class="navigation-items">
+      <li>
+        <a href="https://www.facebook.com/PremiAir-Helicopters-584898148653253/"> 
+          <i class="fab fa-facebook fa-2x" aria-hidden="true"></i>
+        </a>
+      </li>
+      <li >
+        <a href="https://www.instagram.com/premiairhelicopters/"> 
+          <i class="fab fa-instagram fa-2x" aria-hidden="true"></i>
+        </a>
+      </li>
+      <li >
+        <a routerLink="/linkedin"> 
+          <i class="fab fa-linkedin fa-2x" aria-hidden="true"></i>
         </a>
       </li>
   </ul>
