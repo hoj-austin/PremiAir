@@ -7,24 +7,37 @@
     </div>
     <div class="intro" fxLayout="column">
         <div fxFlex="">
-            <h4>SAFE HANDS</h4>
-            <p class="spiel">Inspired by his passion for the air, John founded PremiAir
-                in 2018 to bring the joy of flight to more Melbournians. With over 
-                30 years flying experience in mustering, airwork, instructing, and
-                even flying the ABC live news chopper - you couldn't be in safer hands.
-            </p>
-        </div>
-        <div fxFlex="">
             <div class="img_row" fxLayout="row" fxLayout.sm="column" fxLayout.xs="column">
-                <div fxFlex="">
-                    <img class="john3" src="../../assets/john3.jpg"> 
-                </div>
-                <div fxFlex="">
-                    <img class="john2" src="../../assets/john2.jpg">
-                </div>
-                <div fxFlex="">   
-                    <img class="john2" src="../../assets/john1.jpg">
-                </div>
+                <mat-card routerLink="/about" class="intro-card" fxFlex="">
+                    <mat-card-title>SAFE HANDS</mat-card-title>
+                    <mat-card-subtitle>Captain John Wotherspoon</mat-card-subtitle>
+                    <img class="aboutus-img" src="../../assets/john3.jpg">
+                    <mat-card-content class="aboutus-text">
+                        <p>With over 30 years flying experience in mustering, airwork, instructing, and 
+                            even flying the ABC live news chopper - you couldn't be in safer hands.
+                        </p>
+                    </mat-card-content> 
+                </mat-card>
+                <mat-card routerLink="/scenics" class="intro-card" fxFlex="">
+                    <mat-card-title>STUNNING VIEWS</mat-card-title>
+                    <mat-card-subtitle>Melbourne, Great Ocean Road, Yarra Valley</mat-card-subtitle>
+                    <img class="scenics-img" src="../../assets/john2.jpg">
+                    <mat-card-content class="scenics-text">
+                        <p>Experience the unforgettable views of the Melbourne city skyline, the Great 
+                            Ocean Road, the Yarra Valley and more. 
+                        </p>
+                    </mat-card-content>
+                </mat-card>
+                <mat-card routerLink="/tours" class="intro-card" fxFlex="">
+                    <mat-card-title>UNIQUE EXPERIENCES</mat-card-title>
+                    <mat-card-subtitle>Exclusive Yarra Valley Food and Wine Tours</mat-card-subtitle>
+                    <img class="tours-img" src="../../assets/winery_large.jpeg">
+                    <mat-card-content class="tours-text">
+                        <p>Join us for a luxurous winery tour to the Yarra Valley - with captivating views,
+                            award winning wines and bespoke gourmet dining. 
+                        </p>
+                    </mat-card-content>
+                </mat-card>
             </div>   
         </div>
     </div>

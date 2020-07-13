@@ -5,7 +5,7 @@ body
     font-size: 14px
     background-color: #ffffff
     font-family: sans-serif
-    padding-top: 15px
+    margin: 25px
 
 h4
     color: #00205B
@@ -24,9 +24,9 @@ h4
     filter: brightness(1.2)
     filter: saturate(1.4)
 
+
 .banner-container
     position: relative
-    padding-top: 10px
 
 .text-block
     position: absolute
@@ -35,6 +35,9 @@ h4
     color: #ffffff
     font-family: sans-serif
     font-weight: bold
+.text-block:hover
+    color: #fe5000
+    cursor: pointer
 
 @media screen and (min-width: 901px)
     .text-block
@@ -56,32 +59,55 @@ h4
     .text-block
         font-size: 10px
 
+
 // intro
 .intro
-    margin: 150px
-    padding: 80px
+    margin-top: 20px
+    margin-bottom: 20px
+    margin-left: 50px
+    margin-right: 50px
+    padding-top: 50px
+    padding-bottom: 50px
+    display: flex
+    justify-content: center
+    align-items: center
     border-top-style: solid
     border-top-width: thin
     border-top-color: #00205B
     border-bottom-style: solid
     border-bottom-color: #00205B
     border-bottom-width: thin
-    text-align: center
+
     
 
-.spiel
-    padding: 10px
-    font-family: sans-serif
-    text-align: center
+// mat cards
+.intro-card
+    max-width: 400px
+    margin-left: 50px
+    margin-right: 50px
+    margin-top: 10px
+    margin-bottom: 10px
+    cursor: pointer
+.intro-card:hover
+    border-style: solid
+    border-width: thin
+    border-color: #fe5000
 
-.img_row
-    text-align: center
 
-.john3, .john2
-    max-height: 400px
-    width: auto
-    border-radius: 10px
-    padding: 3px
+mat-card-title, mat-card-subtitle
+    color: #00205B
+ 
+.aboutus-img, .scenics-img, .tours-img
+    max-width: 400px
+    width: 100%
+    height: auto
+    border-radius: 3px
+    opacity: 1
     filter: brightness(1.2)
     filter: saturate(1.4)
+
+mat-card-content
+    text-align: center
+    color: #00205B
+    font-family: sans-serif
 

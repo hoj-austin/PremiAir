@@ -6,23 +6,42 @@ a
     color: #00205B
     font-family: sans-serif
     outline: none
+    font-weight: bold
  
 a:hover, a:active
     color: #fe5000
 
+@media screen and (min-width: 1201px)
+    a
+        font-size: 18px
+
+@media screen and (max-width: 1200px)
+    a
+        font-size: 16px
+
 .navigation-items
     list-style-type: none
-    padding-top: 25px
+    padding-top: 40px
     margin: 0
  
 mat-toolbar
     background-color: #ffffff
     color: #FFFFFF
     padding-top: 10px
-    padding-bottom: 10px
+    padding-bottom: 50px
+    border-top-style: solid
+    border-top-width: thin
+    border-top-color: #00205B
+    border-bottom-style: solid
+    border-bottom-color: #00205B
+    border-bottom-width: thin
+    padding-left: 10px
+    padding-right: 10px
+
+
 
 .logo
-    padding-top: 60px
+    padding-top: 80px
     padding-bottom: 30px
     max-width: 400px
     width: 100%
@@ -30,13 +49,13 @@ mat-toolbar
 
 .logo-small
     padding-top: 50px
-    padding-bottom: 30px
+    padding-bottom: 20px
     max-width: 300px
     width: 100%
     height: auto
 
 .menu-button
-    padding-top: 25px
+    padding-top: 50px
     padding-inline-end: 15px
 
 mat-icon
