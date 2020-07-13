@@ -23,21 +23,22 @@ h4
     opacity: 1
     filter: brightness(1.2)
     filter: saturate(1.4)
-
-
+    box-shadow: 7px -7px 5px #CCC
+   
 .banner-container
     position: relative
 
 .text-block
     position: absolute
     bottom: 40px
-    right: 50px
+    right: 40px
     color: #ffffff
     font-family: sans-serif
     font-weight: bold
 .text-block:hover
     color: #fe5000
     cursor: pointer
+    text-shadow: 2px 2px 4px #00205B
 
 @media screen and (min-width: 901px)
     .text-block
@@ -47,17 +48,13 @@ h4
     .text-block
         font-size: 20px
 
-@media screen and (max-width: 700px) and (min-width: 501)
+@media screen and (max-width: 700px) and (min-width: 551)
     .text-block
         font-size: 15px
 
-@media screen and (max-width: 500px) and (min-width: 451)
+@media screen and (max-width: 550px) 
     .text-block
-        font-size: 13px
-
-@media screen and (max-width: 450px)
-    .text-block
-        font-size: 10px
+        font-size: 12px
 
 
 // intro
@@ -83,11 +80,10 @@ h4
 // mat cards
 .intro-card
     max-width: 400px
-    margin-left: 50px
-    margin-right: 50px
-    margin-top: 10px
-    margin-bottom: 10px
+    margin: 10px
     cursor: pointer
+    height: auto
+
 .intro-card:hover
     border-style: solid
     border-width: thin
@@ -97,10 +93,10 @@ h4
 mat-card-title, mat-card-subtitle
     color: #00205B
  
-.aboutus-img, .scenics-img, .tours-img
+.aboutus-img, .scenics-img, .tours-img, .aerial-img
     max-width: 400px
     width: 100%
-    height: auto
+    // height: auto
     border-radius: 3px
     opacity: 1
     filter: brightness(1.2)
