@@ -4,13 +4,11 @@ body
     text-align: center
     font-size: 14px
     background-color: #ffffff
-    font-family: sans-serif
     margin: 25px
 
 h4
     color: #00205B
     font-size: 30px
-    font-family: sans-serif
     font-weight: bolder
     padding: 0px
 
@@ -35,26 +33,36 @@ h4
     color: #ffffff
     font-family: sans-serif
     font-weight: bold
+    text-shadow: 2px 2px 4px #000000
 .text-block:hover
-    color: #fe5000
+    color: #ffcbb3
     cursor: pointer
-    text-shadow: 2px 2px 4px #00205B
+    text-shadow: 2px 2px 4px #000000
 
-@media screen and (min-width: 901px)
+@media screen and (min-width: 1301px)
+    .text-block
+        font-size: 40px
+
+@media screen and (max-width: 1300px) and (min-width: 1001px)
+    .text-block
+        font-size: 35px
+
+@media screen and (max-width: 1000px) and (min-width: 801px)
     .text-block
         font-size: 25px
 
-@media screen and (max-width: 900px) and (min-width: 701px)
+@media screen and (max-width: 800px) and (min-width: 651px)
     .text-block
         font-size: 20px
 
-@media screen and (max-width: 700px) and (min-width: 551)
+@media screen and (max-width: 650px) and (min-width: 551px)
     .text-block
         font-size: 15px
 
+
 @media screen and (max-width: 550px) 
     .text-block
-        font-size: 12px
+        font-size: 10px
 
 
 // intro
@@ -75,7 +83,6 @@ h4
     border-bottom-color: #00205B
     border-bottom-width: thin
 
-    
 
 // mat cards
 .intro-card
@@ -89,14 +96,12 @@ h4
     border-width: thin
     border-color: #fe5000
 
-
 mat-card-title, mat-card-subtitle
     color: #00205B
  
 .aboutus-img, .scenics-img, .tours-img, .aerial-img
     max-width: 400px
     width: 100%
-    // height: auto
     border-radius: 3px
     opacity: 1
     filter: brightness(1.2)
@@ -105,5 +110,31 @@ mat-card-title, mat-card-subtitle
 mat-card-content
     text-align: center
     color: #00205B
-    font-family: sans-serif
 
+
+// reviews
+.review-container
+    margin: 50px
+    padding-bottom: 40px
+    border-bottom-style: solid
+    border-bottom-color: #00205B
+    border-bottom-width: thin
+
+.review-card
+    margin: 20px
+    padding: 5px
+    box-shadow: none !important
+    max-width: 600px
+
+.card-container
+    display: flex
+    justify-content: center
+    align-items: center
+    
+
+
+
+
+
+
+    
