@@ -1,11 +1,22 @@
 <body>
-    <div routerLink="/scenics" class="banner-container">
+    <div class="banner-container">
         <img class="banner-img" src="../../assets/12apostles3.jpg"> 
         <div class="text-block">
             <p>TAKE TO THE SKIES</p>
         </div>
     </div>
     <div class="card-container" fxLayout="column">
+        <div fxFlex="" class="description-container">
+            <mat-card class="description-card">
+                <mat-card-content class="description">
+                    <p>
+                        Experience an unforgettable flight over the most spectacular scenery 
+                        Melbourne and its surrounds has to offer. All flights include safety briefings,  
+                        commentary from your pilot, and plenty of photo opportunities! 
+                    </p>
+                </mat-card-content>
+            </mat-card>
+        </div>
         <div fxFlex="">
             <div class="img_row" fxLayout="row" fxLayout.sm="column" fxLayout.xs="column">
                 <mat-card class="flight-card" fxFlex="">
@@ -13,9 +24,9 @@
                     <mat-card-subtitle>20 Minute Scenic Flight, from $175pp</mat-card-subtitle>
                     <mat-card-content class="flight-text">
                         <img class="scenic-img" src="../../assets/city1.jpg">
-                        <p>
+                        <p class="scenic-para">
                             Fly to the beautiful beaches within 5 minutes, passing all there is 
-                            to see between Essendon and St Kilda. Finished with a city orbit for 
+                            to see between Essendon and St Kilda - followed by with a city orbit for 
                             the stunning city views. 
                         </p>
                     </mat-card-content> 
@@ -25,7 +36,7 @@
                     <mat-card-subtitle>Half Day Adventure to the 12 Apostles, from $1750pp</mat-card-subtitle>
                     <mat-card-content class="flight-text">
                         <img class="scenic-img" src="../../assets/12apostles2.jpg">
-                        <p>
+                        <p class="scenic-para">
                             Fly out to the Great Ocean Road, and soak in the views of the world
                             reknowned 12 Apostles and surrounding coastline. An amazing, customisable
                             experience!
@@ -37,7 +48,7 @@
                     <mat-card-subtitle>30 Minute City and Beaches Scenic Flight, from $230pp</mat-card-subtitle>
                     <mat-card-content class="flight-text">
                         <img class="scenic-img" src="../../assets/albertpark1.jpg">
-                        <p class="text">
+                        <p class="scenic-para">
                             Fly direct to Williamstown, then cruise the Melbourne coastline down to the
                             beautiful Half Moon Bay. Return up the coast to the city scape and finish 
                             with an amazing city orbit.
@@ -57,6 +68,27 @@
                 <a class="cont-button" mat-raised-button color="accent" href="mailto:admin@premiairhelicopters.com.au"> Send us an email <br> admin@premiairhelicopters.com.au</a>
             </div>
         </div>
+        <mat-card class="review-card" fxFlex="">
+            <mat-card-title>
+                CAROLYN
+            </mat-card-title>
+            <mat-card-subtitle>
+                <mat-icon color="accent">star</mat-icon>
+                <mat-icon color="accent">star</mat-icon>
+                <mat-icon color="accent">star</mat-icon>
+                <mat-icon color="accent">star</mat-icon>
+                <mat-icon color="accent">star</mat-icon>
+            </mat-card-subtitle> 
+            <mat-card-content>
+                <p>
+                    " Our helicopter flight over Melbourne was brilliant. We had never been 
+                    in a helicopter before, but the staff were very professional and helpful. 
+                    The views were just amazing and we enjoyed every second. I was in the 
+                    back seat but still had an amazing view. Would definitely recommend.
+                     "
+                </p>
+            </mat-card-content>  
+        </mat-card>
     </div>
 </body>
 
