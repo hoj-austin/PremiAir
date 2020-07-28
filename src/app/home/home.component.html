@@ -5,7 +5,7 @@
             <p>DISCOVER A BETTER VIEW OF MELBOURNE</p>
         </div>
     </div>
-    <div class="intro" fxLayout="column">
+    <div class="intro-container" fxLayout="column">
         <div fxFlex="">
             <div class="img_row" fxLayout="row" fxLayout.sm="column" fxLayout.xs="column">
                 <mat-card routerLink="/about" class="intro-card" fxFlex="">
@@ -23,7 +23,7 @@
                     <mat-card-subtitle>Melbourne, Great Ocean Road, Yarra Valley</mat-card-subtitle>
                     <img class="scenics-img" src="../../assets/john2.jpg">
                     <mat-card-content class="scenics-text">
-                        <p>Experience the unforgettable views of the Melbourne city skyline, Great 
+                        <p>Savour the unforgettable views of the Melbourne city skyline, Great 
                             Ocean Road, Yarra Valley, and more 
                         </p>
                     </mat-card-content>
@@ -51,29 +51,168 @@
             </div>   
         </div>
     </div>
-    <div class="scenics" fxLayout="row" fxLayout.sm="column" fxLayout.xs="column">
-        <div fxFlex="">
-            text2
+    <div class="review-container" fxLayout="column">
+        <div class="review-hdg">
+            <h4>
+                Thanks for flying with us! 
+                <img class="logo" src="../../assets/PremiAir_Icon_png_crop.png">
+            </h4>
         </div>
-        <div fxFlex="">
-            image2
+        <div class="reviews" fxFlex="" fxLayout="row" fxLayout.sm="column" fxLayout.xs="column">
+            <div fxFlex="">
+                <div class="card-container" fxLayout="column">
+                    <mat-card class="review-card" fxFlex="">
+                    <mat-card-title>
+                        JEMIMA
+                    </mat-card-title>
+                    <mat-card-subtitle>
+                        <mat-icon color="accent">star</mat-icon>
+                        <mat-icon color="accent">star</mat-icon>
+                        <mat-icon color="accent">star</mat-icon>
+                        <mat-icon color="accent">star</mat-icon>
+                        <mat-icon color="accent">star</mat-icon>
+                    </mat-card-subtitle> 
+                    <mat-card-content>
+                        <p>
+                            " Having never been in a helicopter before I didn’t quite know 
+                            what to expect but John and the guys from PremiAir Helicopters 
+                            made us feel so comforted and welcome, sharing their knowledge 
+                            on Melbourne CBD, Essendon Airport and surrounds. We had a blast. 
+                            Would highly recommend to anybody visiting Melbourne! "
+                        </p>
+                    </mat-card-content>  
+                    </mat-card>
+                    <mat-card class="review-card" fxFlex="">
+                        <mat-card-title>
+                            SAM
+                        </mat-card-title>
+                        <mat-card-subtitle>
+                            <mat-icon color="accent">star</mat-icon>
+                            <mat-icon color="accent">star</mat-icon>
+                            <mat-icon color="accent">star</mat-icon>
+                            <mat-icon color="accent">star</mat-icon>
+                            <mat-icon color="accent">star</mat-icon>
+                        </mat-card-subtitle> 
+                        <mat-card-content>
+                            <p>
+                                " What a great experience. First time ever in a Helicopter. 
+                                The flight was so enjoyable. We travelled from Essendon into 
+                                the CBD where we visited landmarks in Melbourne. John communicated 
+                                with me the whole time and made it a very enjoyable experience 
+                                that I will never forget. Sitting in the helicopter was very 
+                                comfortable and the flight was so smooth and very enjoyable. 
+                                Thanks John. "
+                            </p>
+                        </mat-card-content>   
+                    </mat-card>
+                </div>
+            </div>
+            <div fxFlex="">
+                <div class="card-container" fxLayout="column">
+                    <mat-card class="review-card" fxFlex="">
+                        <mat-card-title>
+                            DEAN
+                        </mat-card-title>
+                        <mat-card-subtitle>
+                            <mat-icon color="accent">star</mat-icon>
+                            <mat-icon color="accent">star</mat-icon>
+                            <mat-icon color="accent">star</mat-icon>
+                            <mat-icon color="accent">star</mat-icon>
+                            <mat-icon color="accent">star</mat-icon>
+                        </mat-card-subtitle> 
+                        <mat-card-content>
+                            <p>
+                                " 
+                                A unique look at Melbourne CBD and surrounds from the air in a 
+                                well appointed and comfortable light helicopter. Very informative 
+                                pilot and a comprehensive look around Melbourne CBD and surrounding 
+                                area such as Melbourne Docks, St Kilda and Port Melbourne Beaches, 
+                                Albert Park Lake, Melbourne University and many more.
+                                 "
+                            </p>
+                        </mat-card-content> 
+                    </mat-card>
+                    <mat-card class="review-card" fxFlex="">
+                        <mat-card-title>
+                            SHERYL
+                        </mat-card-title>
+                        <mat-card-subtitle>
+                            <mat-icon color="accent">star</mat-icon>
+                            <mat-icon color="accent">star</mat-icon>
+                            <mat-icon color="accent">star</mat-icon>
+                            <mat-icon color="accent">star</mat-icon>
+                            <mat-icon color="accent">star</mat-icon>
+                        </mat-card-subtitle> 
+                        <mat-card-content>
+                            <p>
+                                " This whole experience was a thrill from the moment the 
+                                Pilot said "hello". The constant dialogue explaining the 
+                                iconic buildings and sites was exceptional. There is absolutely 
+                                no negative features of this experience. In three words..... 
+                                wow wow wow! "
+                            </p>
+                        </mat-card-content>   
+                    </mat-card>
+                </div>
+            </div>   
         </div>
     </div>
-    <div class="tours" fxLayout="row" fxLayout.sm="column" fxLayout.xs="column">
-        <div fxFlex="">
-            text3
-        </div>
-        <div fxFlex="">
-            image3
-        </div>
+    <div class="social-container">
+        <mat-card class="socials-card">
+            <mat-card-title>
+                <a class="hashtag" href="https://www.instagram.com/premiairhelicopters/"> 
+                    <i class="fab fa-instagram" aria-hidden="true"></i>
+                    #premiairhelicopters
+                </a>
+            </mat-card-title>
+            <mat-card-content>
+                <div class="slides">
+                    <img class="insta-img" src="../../assets/socials/insta9.png">
+                    <img class="insta-img" src="../../assets/socials/insta2.png">
+                    <img class="insta-img" src="../../assets/socials/insta3.png">
+                    <img class="insta-img" src="../../assets/socials/insta4.png">
+                    <img class="insta-img" src="../../assets/socials/insta5.png">
+                </div>
+                <div class="slides">
+                    <img class="insta-img" src="../../assets/socials/insta1.png">
+                    <img class="insta-img" src="../../assets/socials/insta6.png">
+                    <img class="insta-img" src="../../assets/socials/insta8.png">
+                    <img class="insta-img" src="../../assets/socials/insta7.png">
+                    <img class="insta-img" src="../../assets/socials/insta10.png">
+                </div>
+            </mat-card-content>
+        </mat-card>
     </div>
-    <div class="aerial photography" fxLayout="row" fxLayout.sm="column" fxLayout.xs="column">
-        <div fxFlex="">
-            text4
+    <div class="contact-container" fxLayout="column" fxLayoutAlign="space-evenly center">
+        <div class="contact-header" fxFlex="">
+            <h4>
+                FOR BOOKINGS AND ENQUIRIES
+            </h4>
         </div>
-        <div fxFlex="">
-            image4
+        <div class="button-container" fxFlex="">
+            <a class="cont-button" mat-raised-button color="accent" href="tel:+61451979048"> Give us a call <br> +6 1 451 979 048</a>
+            <a class="cont-button" mat-raised-button color="accent" href="mailto:admin@premiairhelicopters.com.au"> Send us an email <br> admin@premiairhelicopters.com.au</a>
         </div>
+        <div class="location" fxFlex="" fxLayout="column">
+            <div fxFlex="">
+                <h4> WHERE TO FIND US</h4>
+                <a class="maplink" href="https://goo.gl/maps/uvRuSkWjy82sGASN9">
+                    <p class="hangar">
+                        Hangar 81
+                    </p>
+                    <p class="address">
+                        30 Bristol Street, Essendon Airport, Melbourne, Australia
+                    </p>
+                </a>
+            </div>
+            <div class="map" fxFlex="">
+                <a href="https://goo.gl/maps/uvRuSkWjy82sGASN9">
+                    <img class="map-img" src="../../assets/hangar85_map.jpg">
+                    <img class="map-img" src="../../assets/hangar85_img.jpg">
+                </a>
+            </div>
+        </div>
+
     </div>
 </body>
 
