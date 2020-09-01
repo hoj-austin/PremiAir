@@ -34,7 +34,7 @@ export class HomeComponent implements OnInit {
         }
       
         eles[slideIndex - 1].style.display = "block";
-        setTimeout(carousel, 4000);                                 
+        setTimeout(carousel, 3000);                                 
     }
   }
 }

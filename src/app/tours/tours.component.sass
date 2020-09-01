@@ -50,19 +50,25 @@ h4
 @media screen and (max-width: 800px) and (min-width: 651px)
     .text-block
         font-size: 20px
+        bottom: 20px
 
 @media screen and (max-width: 650px) and (min-width: 551px)
     .text-block
-        font-size: 15px
+        font-size: 18px
+        bottom: 20px
 
 @media screen and (max-width: 550px) 
     .text-block
-        font-size: 10px
+        font-size: 15px
+        bottom: 5px
+        right: 12px
+    body
+        margin: 8px
 
 
 // flight cards
 .card-container
-    margin-top: 20px
+    margin-top: 50px
     margin-bottom: 20px
     margin-left: 50px
     margin-right: 50px
@@ -82,7 +88,6 @@ h4
     max-width: 800px
 
 .description
-    // font-weight: bold
     font-style: italic
     font-size: 16px
 
@@ -111,6 +116,17 @@ mat-card-content
 .wine-para
     max-width: 800px
 
+@media screen and (max-width: 550px) 
+    .card-container
+        padding-top: 20px
+        margin-left: 10px
+        margin-right: 10px
+        margin-top: 30px
+    .description-container
+        margin: 0px 5px 20px 5px
+    .description
+        font-size: 14px
+
 // contact buttons
 .contact-container
     padding: 40px
@@ -134,3 +150,19 @@ mat-card-content
     padding: 5px
     box-shadow: none !important
     max-width: 600px
+
+@media screen and (max-width: 550px) 
+    .cont-button
+        width: 300px !important
+        font-size: 16px
+    .contact-container
+        padding: 30px 10px 30px 10px
+    .contact-header
+        color: #00205B
+        font-size: 24px
+        font-weight: bolder
+        padding: 0px 15px 0px 15px
+        margin-left: 10px
+        margin-right: 10px
+    h4 
+        font-size: 24px
